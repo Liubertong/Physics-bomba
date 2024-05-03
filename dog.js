@@ -1,10 +1,7 @@
-var velocity = document.getElementById("v");
-var acceleration = document.getElementById("a");
-var distance = document.getElementById("distance");
-var finalvelocity = document.getElementById("final velocity");
-var initialvelocity = document.getElementById("initial velocity");
-var time = document.getElementById("time");
-var form = document.getElementById("form");
+const Velocity = document.getElementById("v");
+const Distance = document.getElementById("d");
+const time = document.getElementById("time");
+// var form = document.getElementById("form");
 let resultArea = document.querySelector(".comment");
 modalContent = document.querySelector(".modal-content");
 modalText = document.querySelector("#modalText");
@@ -22,6 +19,22 @@ function calculate(){
     }
   
 }
+
+
+
+document.getElementById("v").addEventListener("change", function() {
+  if (this.checked) {
+      document.getElementById("velocityLabel").previousElementSibling.textContent = "Distance(m)";
+      document.getElementById("time").parentElement.style.display = "block";
+  }
+});
+
+document.getElementById("d").addEventListener("change", function() {
+  if (this.checked) {
+      document.getElementById("distanceLabel").previousElementSibling.textContent = "Velocity(m/s)";
+      document.getElementById("time").parentElement.style.display = "none";
+  }
+});
 
 
 

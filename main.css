@@ -140,6 +140,33 @@ h1 {
         font-family: sans-serif
     }
 
+    .inputV {
+      background: #fff;
+      box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      margin-right: 20px;
+  }
+
+
+  .inputV label {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 20px;
+  }
+ .inputV input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #4f7df9;
+      width: 50%;
+      text-align: center;
+      font-size: 28px;
+      font-family: sans-serif
+  }
+
   
 button.calculate {
     cursor: pointer;
@@ -204,149 +231,73 @@ button.calculate {
     margin-bottom: 20px;
 }
 
-  /* Style for Radio */
 .velocity .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    /* margin-bottom: 12px; */
-    margin-top: 7px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .velocity .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .velocity .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .velocity .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .velocity .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .velocity .container .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-  }
-
-.acceleration {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    background: #fff;
-    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-  /* Style for Radio */
-.acceleration .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    /* margin-bottom: 12px; */
-    margin-top: 7px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .acceleration .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .acceleration .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .acceleration .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .acceleration .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .acceleration .container .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-  }
+/* Hide the browser's default radio button */
+.velocity .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
 
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.velocity .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.velocity .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.velocity .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.velocity .container .checkmark:after {
+     top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+  
 .containerDT {
     
     justify-content: space-around;
